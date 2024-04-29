@@ -1,0 +1,63 @@
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.diapo {
+  position: relative;
+  overflow: hidden;
+}
+
+.elements {
+  display: flex;
+}
+
+.element {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.element > img {
+  width: 100%;
+}
+
+#nav-gauche,
+#nav-droite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: #246a76;
+}
+#nav-droite {
+  right: 0;
+}
+
+/* CSS for the new section */
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  flex: 1;
+  padding: 10px;
+}
+
+.gauche {
+  flex-basis: 40%; /* Adjusts the width of the image column */
+}
+
+.droite {
+  flex-basis: 60%; /* Adjusts the width of the text column */
+  padding-left: 20px; /* Adds some spacing between the text and the image */
+}
+
+img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains the aspect ratio of the image */
+}
